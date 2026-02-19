@@ -16,7 +16,36 @@
 				<div class="middleBar">
 					<input type="text" id="searchBook" placeholder="Search Book">
 				</div>
-				<div class="rightBar">
-					<img src="/images/plus.svg" alt="Add Button">
-				</div>
+				<button class="rightBar" id="addButton">
+					<img src="/BookShelf/images/plus.svg" alt="Add Button">
+				</button>
 			</header>
+
+			<main>
+				<ul id="libraryList">
+				</ul>
+			</main>
+			<div id="modal" class="modal hidden">
+				<div class="modal-content">
+					<form id="form">
+						<label for="coverURL">Cover URL</label>
+						<input type="text" id="coverURL" class="formInput">
+						<label for="bookTitle">Book Title</label>
+						<input type="text" id="bookTitle" class="formInput">
+						<label for="author">Author</label>
+						<input type="text" id="author" class="formInput">
+						<label for="pages">Pages</label>
+						<input type="text" id="pages" class="formInput">
+						<label for="read">Read</label>
+						<input type="checkbox" id="read" class="formInput">
+					</form>
+					<div>
+						<button type="button" id="submitButton">Submit</button>
+						<button type="button" id="closeModal">Cancel</button>
+					</div>
+				
+				</div>
+			</div>
+		</div>
+		<script src="script.js" defer></script>
+	</body>	

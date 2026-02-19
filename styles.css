@@ -2,7 +2,7 @@
 :root {
 	--primary: #1a1a1a;
 	--secondary: #fcf7f8;
-	--paper: #f5f5f5;
+	--paper: #fcfdedf3;
 }
 
 html, body {
@@ -18,6 +18,10 @@ body {
 
 .container {
 	background-color: var(--paper);
+}
+
+main.blur {
+  filter: blur(6px) brightness(0.6);
 }
 
 .topBar {
@@ -51,4 +55,93 @@ body {
 
 .middleBar {
 	justify-self: end;
+}
+
+main{
+	padding: 1rem 2rem;
+	margin: 0;
+}
+
+#libraryList {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+
+.dltButton {
+	background-color: brown;
+	color: beige;
+	border: none;
+	font-family: "Inter", sans-serif;
+	cursor: pointer;
+}
+
+.edtButton {
+	background-color: black;
+	color: beige;
+	border: none;
+	font-family: "Inter", sans-serif;
+	cursor: pointer;
+}
+
+#coverURL {
+	border-radius: 100px;
+}
+
+.modal {
+	background-color: brown;
+	top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	position: fixed;
+	padding: 2em;
+	border-radius: 2px;
+}
+
+.modal-content {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+#form {
+	display: flex;
+	gap: 2em;
+	align-items: center;
+}
+
+.hidden {
+	display: none;
+}
+
+#read {
+	display: flex;
+	justify-content: center;
+}
+
+label {
+	color: beige;
+}
+
+.formInput {
+	border: none;
+}
+
+#coverURL{
+	border-radius: 0px;
+}
+
+#submitButton {
+	background-color: beige;
+	color: brown;
+	border: none;
+}
+
+#closeModal {
+	background-color: black;
+	color: beige;
+	border: none;
 }
